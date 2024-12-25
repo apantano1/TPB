@@ -3,78 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ParkPage</title>
+    <title>Japari Park</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #006400;
             color: white;
-            padding: 1rem;
+            padding: 10px;
             text-align: left;
         }
         .content {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 1rem;
         }
         .menu {
-            width: 25%;
             background-color: #ffffcc;
-            padding: 1rem;
+            padding: 10px;
+            width: 250px;
         }
-        .menu a {
-            display: block;
-            padding: 0.5rem;
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu li a {
             text-decoration: none;
-            color: #000;
+            color: black;
+            font-size: 14px;
         }
-        .menu a:hover {
-            background-color: #ddd;
+        .menu li:hover {
+            background-color: #f0f0f0;
         }
-        .main-content {
-            width: 70%;
-            padding: 1rem;
+        .main {
+            flex: 1;
+            background-image: url('https://via.placeholder.com/300x200'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+            text-align: center;
+        }
+        .main img {
+            max-width: 100%;
+            height: auto;
         }
         footer {
-            background-color: #333;
+            background-color: #006400;
             color: white;
-            padding: 1rem 0;
+            font-size: 12px;
+            padding: 10px;
             text-align: center;
-            margin-top: 2rem;
+        }
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        footer li {
+            margin: 0 10px;
+        }
+        footer li a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to ParkPage</h1>
+        <h1>Welcome to japari.park</h1>
     </header>
     <div class="content">
         <div class="menu">
-            <a href="#">All Right</a>
-            <a href="#">Video Right</a>
-            <a href="#">Lou Holtz</a>
-            <a href="#">About Human Right</a>
-            <a href="#">Legal Right</a>
-            <a href="#">Music Production</a>
-            <a href="#">Right on Magazine</a>
-            <a href="#">Civil Right</a>
-            <a href="#">Record Company</a>
-            <a href="#">Liberty</a>
-            <a href="#">Law</a>
+            <ul>
+                <li><a href="#">&gt;</a></li>
+                <li><a href="#">&gt;</a></li>
+                <li><a href="#">&gt;</a></li>
+                <li><a href="#">&gt;</a></li>
+                <li><a href="#">&gt;</a></li>
+                <li><a href="#">&gt;</a></li>
+                <li><a href="#">&gt;</a></li>
+                <li><a href="#">&gt;</a></li>
+                <li><a href="#">&gt;</a></li>
+                <li><a href="#">&gt;</a></li>
+            </ul>
         </div>
-        <div class="main-content">
-            <img src="https://via.placeholder.com/300x200" alt="Placeholder image">
-            <p>Welcome to the central section of the page! Customize as needed.</p>
+        <div class="main">
+            <img src="https://via.placeholder.com/200x300" alt="Character image" />
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 ParkPage. All rights reserved.</p>
+        <ul>
+            <li><a href="#">ほけん</a></li>
+            <li><a href="#">くれじっとかーど</a></li>
+            <li><a href="#">きょういくきかん</a></li>
+            <li><a href="#">すみかめやく</a></li>
+            <li><a href="#">フレンズである</a></li>
+            <li><a href="#">しゃっきんのせいり</a></li>
+        </ul>
     </footer>
 </body>
 </html>
