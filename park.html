@@ -10,23 +10,43 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            text-align: center;
         }
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 1rem 0;
+            padding: 1rem;
+            text-align: left;
         }
-        main {
-            padding: 2rem;
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+        .menu {
+            width: 25%;
+            background-color: #ffffcc;
+            padding: 1rem;
+        }
+        .menu a {
+            display: block;
+            padding: 0.5rem;
+            text-decoration: none;
+            color: #000;
+        }
+        .menu a:hover {
+            background-color: #ddd;
+        }
+        .main-content {
+            width: 70%;
+            padding: 1rem;
         }
         footer {
             background-color: #333;
             color: white;
             padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
         }
     </style>
 </head>
@@ -34,9 +54,25 @@
     <header>
         <h1>Welcome to ParkPage</h1>
     </header>
-    <main>
-        <p>This is a simple webpage template. Customize it as you like!</p>
-    </main>
+    <div class="content">
+        <div class="menu">
+            <a href="#">All Right</a>
+            <a href="#">Video Right</a>
+            <a href="#">Lou Holtz</a>
+            <a href="#">About Human Right</a>
+            <a href="#">Legal Right</a>
+            <a href="#">Music Production</a>
+            <a href="#">Right on Magazine</a>
+            <a href="#">Civil Right</a>
+            <a href="#">Record Company</a>
+            <a href="#">Liberty</a>
+            <a href="#">Law</a>
+        </div>
+        <div class="main-content">
+            <img src="https://via.placeholder.com/300x200" alt="Placeholder image">
+            <p>Welcome to the central section of the page! Customize as needed.</p>
+        </div>
+    </div>
     <footer>
         <p>&copy; 2024 ParkPage. All rights reserved.</p>
     </footer>
